@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>css_006_pesudo.html</title>
+    <style>
+      /* pesudo class를 작성할 때 
+      link - visited - hover - active 순서로 작성 하면 된다. (hover와 active는 바뀌어도 상관 없음) */
+
+      a:link {
+        color: red;
+      }
+
+      /* visited는 link뒤 hover와 active 앞에 배치해야 한다. */
+      a:visited {
+        color: green;
+      }
+
+      a:active {
+        color: blue;
+      }
+
+      a:hover {
+        color: hotpink;
+      }
+    </style>
+  </head>
+  <body>
+    <a href="http://www.w3schools.com">W3Schools</a>
+  </body>
+</html>

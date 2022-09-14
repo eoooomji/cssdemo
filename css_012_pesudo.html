@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>css_012_pesudo.html</title>
+    <style>
+      /* 어떠한 요소의 앞이나 뒤에 문장 혹은 무언갈 삽입할 때 사용하는 스타일이다. */
+      p::before {
+        content: "start";
+      }
+
+      p::after {
+        content: url(images/sky.jpg);
+      }
+    </style>
+  </head>
+  <body>
+    <p>넷플릭스 한국 시리즈 '오징어 게임'이 또 한 번 쾌거를 이뤘다.</p>
+    <p>넷플릭스 한국 시리즈 '오징어 게임'이 또 한 번 쾌거를 이뤘다.</p>
+    <p>넷플릭스 한국 시리즈 '오징어 게임'이 또 한 번 쾌거를 이뤘다.</p>
+    <p>넷플릭스 한국 시리즈 '오징어 게임'이 또 한 번 쾌거를 이뤘다.</p>
+  </body>
+</html>
