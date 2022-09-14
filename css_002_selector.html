@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>css_002_selector.html</title>
+    <style>
+      /* 선택자 우선순위 */
+      /* 우선 순위에 따라 나오는 출력값이 달라진다. 우선순위가 높은거 먼저 출력된다. */
+      /* 0001 */
+      p {
+        color: red;
+        font-size: 30px;
+      }
+
+      /* 0010 */
+      .order {
+        color: green;
+      }
+
+      /* 0100 */
+      #unit {
+        color: orange;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- 
+        color : 폰트의 색상
+        font-size : 폰트의 크기
+     -->
+    <p>test1</p>
+    <!-- 1000 -->
+    <p class="order" id="unit" style="color: purple">test2</p>
+    <p>test3</p>
+    <p class="order">test4</p>
+    <p>test5</p>
+  </body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>css_004_selector.html</title>
+    <style>
+      /* 위에 적은 span의 unit을 가르킴 */
+      /* 공백은 자손을 의미한다. */
+      p .unit {
+        background-color: aqua;
+      }
+
+      /* 아레에 적은 p의 unit을 가르킴 */
+      p.unit {
+        background-color: blue;
+      }
+    </style>
+  </head>
+  <body>
+    <p>
+      <span class="unit">p요소의 자손요소인 span요소에 설정된 class 속성</span>
+    </p>
+
+    <p class="unit">p요소에 설정된 class 속성</p>
+  </body>
+</html>
