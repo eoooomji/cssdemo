@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>css_029_visibility.html</title>
+    <style>
+      div {
+        width: 100px;
+        height: 100px;
+        background-color: red;
+        /* display: none; */
+        visibility: hidden;
+        width: 0px;
+        height: 0px;
+        /* diplay : none 
+        - 값은 값을 아예 잃어버린다. */
+        /* 
+        visibillty : hidden
+        - 값을 숨겨주며 설정한 크기 값은 그대로 입력이 되어있다. 
+        visibillty : visible
+        - 설정한 값을 보여준다.
+        */
+      }
+    </style>
+  </head>
+  <body>
+    <p>before</p>
+    <div></div>
+    <p>after</p>
+  </body>
+</html>
