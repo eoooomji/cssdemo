@@ -35,13 +35,29 @@
         border: 10px solid rgba(255, 0, 0, 0.2);
         padding: 20px;
         background-clip: content-box;
+        background-origin: content-box;
+      }
+      /* background-origin : 배경 위치 시작점을 결정
+         background-clip : 배경 이미지를 잘라낼 위치 결정 
+         이미지 라인이 값에 맞춰서 origin은 채워지고 clip은 영역까지만 표출된다. */
+
+      /* background : bg-color bg-image position/bg-size bg-repeat bg-origin bg-clip bg-attachment initial|inherit; */
+      /* 백그라운드 단축 속성 사용시 위에 처럼 사용하면 된다. */
+      .dv4 {
+        background: red;
+        width: 300px;
+        height: 100px;
       }
     </style>
   </head>
   <body>
     <div class="dv1">&nbsp;</div>
+    <br />
     <div class="dv2">&nbsp;</div>
+    <br />
     <div class="dv3">&nbsp;</div>
+    <br />
     <div class="dv4">&nbsp;</div>
+    <br />
   </body>
 </html>

@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>css_027_position.html</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        border-width: 0;
+      }
+
+      .box1 {
+        width: 500px;
+        height: 100px;
+        background-color: black;
+      }
+
+      .box2 {
+        width: 500px;
+        height: 200px;
+        background-color: yellow;
+        position: relative;
+        /* relative : 본인의 위치를 아는 상태 */
+      }
+
+      .box3 {
+        width: 100px;
+        height: 100px;
+        background-color: red;
+        position: absolute;
+        /* absolute : float처럼 띄우는 속성값이다.
+        부모를 기준으로 위치를 변경한다. 부모의 위치가 정해져 있다면 그 위치를 기준으로 잡는다.
+        그러나 현재 부모의 position이 static이여서 body를 기준으로 위치를 변경하였다.*/
+        left: 50px;
+        top: 50px;
+      }
+
+      .box4 {
+        width: 100px;
+        height: 100px;
+        background-color: green;
+        position: relative;
+        top: 0px;
+        left: 200px;
+      }
+
+      .box6 {
+        width: 800px;
+        height: 100px;
+        background-color: blue;
+      }
+
+      .box5 {
+        width: 100px;
+        height: 100px;
+        background-color: orange;
+        position: fixed;
+        /* fixed : 브라우저를 기준으로 포지션이 위치한다. */
+        right: 100px;
+        top: 50px;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- 
+        포지션(position)
+        1. 포지션은 박스에 대한 배치를 변경할때 사용된다.
+        2. 좌표값을 이용해서 위치를 옮긴다.
+        3. 포지션은 값으로 static, absolute,relative, fixed가 있다.
+        4. static : 순서에 의한 기본 위치를 지정한다.
+           absolute : 부모 요소를 기준으로 위치를 지정한다. (원래의 위치값을 잃는다.)
+           relative : 자기 자신을 기준으로 위치를 지정한다. (원래의 위치값을 가지고 있다.)
+           fixed : 스크린(브라우저)을 기준으로 위치를 지정한다. (원래의 위치값을 잃는다.)
+        5. absolute의 위치지정
+         부모요소의 position이 static이면 기준점이 body가 된다.
+         무보요소의 position이 absolute, relative이면 기준점이 부모요소이다.
+     -->
+    <div class="box1"></div>
+    <div class="box2">
+      <div class="box3"></div>
+      <div class="box4"></div>
+      <p>요소들의 위치 변경</p>
+    </div>
+    <div class="box5"></div>
+    <div class="box6">
+      W3Schools is optimized for learning, testing, and training. Examples might
+      be simplified to improve reading and basic understanding. Tutorials,
+      references, and ...
+    </div>
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+  </body>
+</html>

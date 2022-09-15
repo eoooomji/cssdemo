@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>css_021_float.html</title>
+    <style>
+      /* 
+        float 
+        1. float는 박스의 위치를 부모요소의 안에서 왼쪽 또는 오른쪽으로 이동시키는 기능이다.
+        2. float가 지정된 박스는 문서의 일반적인 흐름에 영향을 받지 않으면서 이동된 위치에 떠 있다.
+        */
+      /* float는 지정한 값을 띄우는 성질을 지녔다. */
+      .wrap {
+        background-color: gray;
+      }
+
+      div.wrap div {
+        width: 100px;
+        height: 100px;
+      }
+
+      .box1 {
+        background-color: red;
+        float: left;
+      }
+      .box2 {
+        background-color: green;
+        float: left;
+      }
+      .box3 {
+        background-color: blue;
+        float: right;
+      }
+      div.wrap p {
+        clear: both;
+        /* float속성에 영향을 안받는 속성 */
+        /* both값을 주게 되면 왼쪽 오른쪽 상관없이 둘 다 영향을 안받는다. 
+        float 해제*/
+      }
+
+      img {
+        float: left;
+        margin-right: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="wrap">
+      <div class="box1"></div>
+      <div class="box2"></div>
+      <div class="box3"></div>
+      <p>inline</p>
+    </div>
+    <div class="other" style="background-color: yellow; height: 500px">
+      <img src="images/gosu.jpg" alt="영화배우 고수" />
+      <p>
+        이들에 따르면 당시 북송된 어민 중 한 명은 1997년 출생으로 함경북도 청진
+        출신인 우범선씨다. 우씨는 북송 당시 촬영된 영상에서 격렬하게 저항하며
+        송환을 거부한 인물이다. 또 다른 한 명은 1996년 출생으로 우씨와 같은 청진
+        출신의 김현욱 씨다. 의원들은 "강제북송 이후 3년여의 시간이 지났지만,
+        이들의 생사 확인은 전혀 이뤄지지 않고 있다"며 "유엔은 이들의 생사 확인을
+        요청하는 질의를 했지만 북한은 모든 답변을 거부하고 있다"라고 지적했다.
+        또 "북한에서 범죄를 저지르고 도망쳤다는 이유로 당시 우리 정부는 본인들의
+        의사에 반함에도 불구하고 북한에 이들을 넘겼다"며 "이는 대한민국 법률과
+        고문방지협약 등 국제법에 어긋나는 비인도적 송환"이라고 비판했다.
+        그러면서 "거듭 북한 당국에 요청한다. 본인의 의사와 무관하게 북한으로
+        돌려보내진 우씨와김씨 두 탈북청년에 대한 생사 여부를 유엔과 국제사회에
+        공개하라"라며 "최악의 인권탄압국이라는 오명을 쓰고 싶지 않다면 이 질문에
+        반드시 답해야 할 것"이라고 했다. 의원들은 이들 어민의 기초적인 신원을
+        이날 면담한 우즈라 제야 미 국무부 민간안보·민주주의·인권 담당 차관에게도
+        전달했다. 하태경, 美 인권담당 차관보 면담 뒤 "미국 정부 차원서
+        '강제북송' 조사 중" 하 의원은 이날 면담과 관련해 페이스북을 통해 "제야
+        차관보가 '탈북선원 강제북송과 관련해 현재 미국 정부 차원의 조사가 진행
+        중이다'는 사실을 밝혔다"고 전했다. 이어 "제야 차관보는 '조사를 위해
+        유엔군사령부에 탈북선원 북송과 관련된 자료를 요청한 상태'라고 했다"며
+        "또 '본인 의사에 반하는 송환이 강제로 이뤄져선 안 된다는 것이 국제법이자
+        미국 정부의 일관된 입장이다'는 말을 덧붙였다"고 했다. 하 의원은
+        해양수산부 공무원 이대준씨 피격사건과 관련해선 "(제야 차관보가) '북한이
+        유족에게 상세한 설명을 할 수 있도록 직간접적인 노력을 다하겠다' '북한과
+        직접 대화가 이뤄지지 않으면 다른 경로를 통해서라도 북한의 협조를
+        요청하겠다'고 했다"고 면담 결과를 설명했다.
+      </p>
+    </div>
+  </body>
+</html>

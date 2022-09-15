@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>css_018_border.html</title>
+    <style>
+      .dv1 {
+        width: 100px;
+        height: 100px;
+        background-color: yellow;
+        border-width: 10px;
+        border-color: black;
+        border-style: solid;
+      }
+
+      .dv2 {
+        width: 100px;
+        height: 100px;
+        background-color: blue;
+        border-bottom-width: 10px;
+        border-bottom-style: dotted;
+        border-bottom-color: aqua;
+      }
+
+      .dv3 {
+        width: 200px;
+        height: 200px;
+        background-color: yellow;
+        border-width: 5px 10px 15px 20px;
+        /* 시계 방향으로 값을 지정한다. : top right bottom left */
+
+        border-style: solid dotted dashed;
+        /* top right,left bottom */
+
+        border-color: red blue;
+        /* top,bottom right,left */
+      }
+
+      .dv4 {
+        width: 200px;
+        height: 200px;
+        background-color: blue;
+        border: 3px dotted white;
+        /* border: border-width border-style border-color|initial|inherit; */
+        /* border값중 style값은 필수로 넣어야 한다. */
+      }
+    </style>
+  </head>
+  <body>
+    <div class="wrap">
+      <div class="dv1"></div>
+      <br />
+      <div class="dv2"></div>
+      <br />
+      <div class="dv3"></div>
+      <br />
+      <div class="dv4"></div>
+    </div>
+  </body>
+</html>
