@@ -4,106 +4,42 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>css_035_nav.html</title>
-    <style>
-      * {
-        margin: 0;
-        padding: 0;
-        border: 0;
-      }
-
-      body {
-        font-family: nanumgothic, serif;
-      }
-
-      .clear {
-        clear: both;
-      }
-
-      div.topnav {
-        display: block;
-        /* background-color: #00ff00; */
-      }
-
-      div.logo {
-        float: left;
-        position: relative;
-        top: 60px;
-        left: 300px;
-        bottom: 50px;
-        right: 200px;
-      }
-      div.search {
-        display: block;
-        /* float: left; */
-        /* margin: 50px 0px 50px 60px; */
-        position: relative;
-        top: 70px;
-        left: 560px;
-        bottom: 50px;
-        right: 60px;
-      }
-
-      div.search .searchline {
-        font-weight: bold;
-        color: green;
-      }
-      div.search #searchclick {
-        border-bottom: 1px solid black;
-      }
-
-      ol.paging {
-        display: block;
-        float: right;
-        position: absolute;
-        /* margin: 50px 200px 50px 150px; */
-        top: 50px;
-        left: -200px;
-      }
-      ol.paging li {
-        float: left;
-        list-style-type: none;
-        display: block;
-      }
-
-      ol.paging li a {
-        font-size: smaller;
-        margin-right: 8px;
-        text-decoration: none;
-      }
-
-      ol.paging li a:hover {
-        text-decoration: underline;
-      }
-    </style>
+    <title>css_035_webpractice.html</title>
+    <!-- developer-roadmap -->
   </head>
   <body>
-    <div class="topnav">
-      <div class="logo">
-        <label for="dayunart"></label>
-        <a href="#"> <img src="images/logo.gif" alt="" id="dayunart" /></a>
+    <header>
+      <div id="top">
+        <div id="logo">
+          <a href="#"><img src="images/logo.gif" alt="" /></a>
+        </div>
+        <div id="search">
+          <label for="search_space2"><div id="search_name">SEARCH</div></label>
+          <div id="search_space1"><input type="text" id="search_space2" /></div>
+          <label for="search_space2"
+            ><div id="search_button">
+              <img src="images/btn_search.gif" alt="" /></div
+          ></label>
+        </div>
+        <div id="topmenu">
+          <ul>
+            <li class="green"><a href="#">로그인</a></li>
+            <li class="green"><a href="#">회원가입</a></li>
+            <li><a href="#"></a></li>
+            <li><a href="#"></a></li>
+            <li><a href="#"></a></li>
+          </ul>
+        </div>
+        <div id="middlemenu">
+          <ul>
+            <li><a href="#">상세 페이지</a></li>
+            <li><a href="#">장바구니</a></li>
+            <li><a href="#">고객 갤러리</a></li>
+            <li><a href="#">주문배송</a></li>
+            <li><a href="#">자주하는 질문</a></li>
+          </ul>
+        </div>
       </div>
-      <div class="search">
-        <span class="searchline">
-          <label for="searchclick">
-            SEARCH
-            <input type="text" name="searchthing" id="searchclick" />
-            <img
-              src="images/btn_search.gif"
-              alt="searchicon"
-              class="btn" /></label
-        ></span>
-      </div>
-      <div class="logclick">
-        <ol class="paging">
-          <li><a href="#">로그인</a></li>
-          <li><a href="#">회원가입</a></li>
-          <li><a href="#">마이페이지</a></li>
-          <li><a href="#">이용안내</a></li>
-          <li><a href="#">고객센터</a></li>
-        </ol>
-      </div>
-      <div class="clear"></div>
-    </div>
+    </header>
   </body>
 </html>
